@@ -1,0 +1,20 @@
+[package]
+name = "baking-powder-tests"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+publish = false
+autotests = false
+
+[[test]]
+name = "suite"
+path = "suite.rs"
+
+[dependencies]
+bp = { path = "../Baking Powder/bp" }
+support = { path = "support" }
+
+[profile.dev]
+opt-level = 2
+
+[workspace]
